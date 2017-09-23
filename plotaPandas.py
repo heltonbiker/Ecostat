@@ -18,6 +18,9 @@ log = np.fromfile(fname, dtype=sampleType)
 df = pd.DataFrame.from_records(log)
 df['timestamp'] = pd.to_datetime(df['timestamp'],unit='s')
 
-df.plot()
+
+df.plot(x='timestamp')
 plt.ylim(0,40)
+plt.axhspan(20,25, alpha=0.25)
+plt.grid()
 plt.show()

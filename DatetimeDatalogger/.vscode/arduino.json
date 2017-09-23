@@ -1,0 +1,5 @@
+{
+    "board": "arduino:avr:uno",
+    "sketch": "DatetimeDatalogger.ino",
+    "port": "COM5"
+}
