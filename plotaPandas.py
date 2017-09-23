@@ -17,7 +17,10 @@ log = np.fromfile(fname, dtype=sampleType)
 
 df = pd.DataFrame.from_records(log)
 df['timestamp'] = pd.to_datetime(df['timestamp'],unit='s')
+print(df)
 
+"""
 df.plot()
 plt.ylim(0,40)
 plt.show()
+"""

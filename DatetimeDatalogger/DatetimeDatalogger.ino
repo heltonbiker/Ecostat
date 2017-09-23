@@ -40,11 +40,6 @@ void setup () {
     Serial.begin(9600);
     analogReference(INTERNAL);
     
-    if (! rtc.isrunning()) {
-        Serial.println("Adjusting RTC");
-        rtc.adjust(DateTime(F(__DATE__), F(__TIME__))); // date and time THIS script has been compiled
-    }
-    
     pinMode(10, OUTPUT); // necessary for SD library
     pinMode(LED_BUILTIN, OUTPUT);
        
